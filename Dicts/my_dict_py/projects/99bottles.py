@@ -1,10 +1,8 @@
-def bottles ():
-    for i in range(99,0,-1):
-        many = ""
-        if i > 1:
-            many = "bottles"
-        elif i == 1:
-            many = "bottle"
-        print("%s %s of beer" % (i,many))
-
-bottles()
+def bottles(x):
+    x = int(x)
+    for i in range(x):
+        print ("")
+        print ("%d bottles of beer on the wall, %d bottles of beer." % (x,x))
+        x -= 1
+        print ("Take one down, pass it around, %s bottles of beer on the wall." % (x))
+bottles(input())
